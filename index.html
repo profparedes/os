@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+      <link rel="stylesheet" type="text/css" href="assets/css/print.css" />
+      <link rel="stylesheet" href="assets/css/styles.css" />
+
+      <title>Ordem de serviço</title>
+   </head>
+   <body>
+      <div align="center">
+         <form method="post" action="fpoliveira@firjan.com.br">
+            <!-- cabecalho -->
+            <div class="cabecalho">
+               <table width="100%" border="1">
+                  <tr>
+                     <th rowspan="3">
+                        <img width="150" src="assets/imgs/2344570.png" alt="" />
+                     </th>
+                     <th><h1>Ordem de serviço</h1></th>
+                     <th>Número: <input type="number" min="1" max="999" /></th>
+                  </tr>
+                  <tr>
+                     <td><h2>Tipo de manutenção:</h2></td>
+                     <td>
+                        <label for="corretiva"
+                           ><input type="radio" name="tipo" id="corretiva" /><b>Corretiva</b></label
+                        ><br />
+                        <label for="preventiva"
+                           ><input
+                              type="radio"
+                              name="tipo"
+                              id="preventiva"
+                           /><b>Preventiva</b></label
+                        ><br />
+                        <label for="preditiva"
+                           ><input
+                              type="radio"
+                              name="tipo"
+                              id="preditiva"
+                           /><b>Preditiva</b></label
+                        ><br />
+                     </td>
+                  </tr>
+               </table>
+            </div>
+            <!-- equipamento -->
+            <div class="equipamento">
+               <table width="100%" border="1">
+                  <tr>
+                     <td class="iten">Equipamento:</</td>
+                     <td colspan="3">
+                        <input
+                           type="text"
+                           size="70"
+                           placeholder="Descreva o equipamento"
+                        />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="iten">Modelo:</td>
+                     <td>
+                        <input
+                           type="text"
+                           placeholder="Cite o modelo do equipamento"
+                           size="39"
+                        />
+                     </td>
+                     <td class="iten">N&#186; de série:</td>
+                     <td>
+                        <input
+                           type="text"
+                           size="16"
+                           placeholder="Insira o numero de série"
+                        />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="iten">Fabricante:</td>
+                     <td>
+                        <input
+                           type="text"
+                           size="39"
+                           placeholder="Descreva o fabricante"
+                        />
+                     </td>
+                     <td class="iten">ID. interna:</td>
+                     <td>
+                        <input
+                           type="text"
+                           size="16"
+                           placeholder="identificação interna"
+                        />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="iten">Setor:</td>
+                     <td colspan="3">
+                        <input
+                           type="text"
+                           size="70"
+                           placeholder="Descreva o setor de instalação do equipamento"
+                        />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="iten">Responsável:</td>
+                     <td colspan="3">
+                        <input
+                           type="text"
+                           size="70"
+                           placeholder="Insira o nome completo do responsável pelo equipamento"
+                        />
+                     </td>
+                  </tr>
+               </table>
+            </div>
+            <!-- Relato -->
+            <div class="relato">
+               <table width="100%" border="1">
+                  <tr>
+                     <td>
+                        <h2>
+                           Defeito <br />
+                           relatado:
+                        </h2>
+                     </td>
+                     <td>
+                        <textarea
+                           name=""
+                           id=""
+                           cols="66"
+                           rows="6"
+                           placeholder="Descreva de forma detalhada o defeito encontrado no equipamentoH"
+                        ></textarea>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="iten">Data do chamado:</td>
+                     <td>
+                        <input type="date" /><input type="time" />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="iten">Solicitante:</td>
+                     <td>
+                        <input
+                           type="text"
+                           placeholder="Insira o nome do solicitante da manutenção"
+                           size="67"
+                        />
+                     </td>
+                  </tr>
+               </table>
+            </div>
+            <!-- Procedimentos técnicos -->
+            <div class="procedimentos">
+               <table width="100%" border="1">
+                  <tr>
+                     <td rowspan="2">
+                        <h2>
+                           Procedimentos <br />
+                           técnicos:
+                        </h2>
+                     </td>
+                     <td colspan="2">
+                        <textarea
+                           name=""
+                           id=""
+                           cols="62"
+                           rows="6"
+                           placeholder="Descreva os procedimentos a ser realizado"
+                        ></textarea>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="iten">Caracteristica:</td>
+                     <td>
+                        <label for="troca">
+                           <input type="checkbox" id="troca" />Substituição
+                        </label>
+                        <label for="limpeza">
+                           <input type="checkbox" id="limpeza" />Limpeza
+                        </label>
+                        <label for="reparo">
+                           <input type="checkbox" id="reparo" />Reparo
+                        </label>
+                        <label for="teste">
+                           <input type="checkbox" id="teste" />Teste
+                        </label>
+                        <label for="manufatura">
+                           <input type="checkbox" id="manufatura" />Manufatura
+                        </label>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="iten">Itens substituidos:</td>
+                     <td class="iten">Quantidade:</td>
+                     <td class="iten">Descrição:</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <input
+                           type="text"
+                           size="17"
+                           placeholder="Escreva o item"
+                        />
+                     </td>
+                     <td class="quantity">
+                        <input type="number" min="1" max="9999" />
+                     </td>
+                     <td>
+                        <input
+                           type="text"
+                           size="48"
+                           placeholder="Descriçao do item"
+                        />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <input
+                           type="text"
+                           size="17"
+                           placeholder="Escreva o item"
+                        />
+                     </td>
+                     <td class="quantity">
+                        <input type="number" min="1" max="9999" />
+                     </td>
+                     <td>
+                        <input
+                           type="text"
+                           size="48"
+                           placeholder="Descriçao do item"
+                        />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <input
+                           type="text"
+                           size="17"
+                           placeholder="Escreva o item"
+                        />
+                     </td>
+                     <td class="quantity">
+                        <input type="number" min="1" max="9999" />
+                     </td>
+                     <td>
+                        <input
+                           type="text"
+                           size="48"
+                           placeholder="Descriçao do item"
+                        />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <input
+                           type="text"
+                           size="17"
+                           placeholder="Escreva o item"
+                        />
+                     </td>
+                     <td class="quantity">
+                        <input type="number" min="1" max="9999" />
+                     </td>
+                     <td>
+                        <input
+                           type="text"
+                           size="48"
+                           placeholder="Descriçao do item"
+                        />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <input
+                           type="text"
+                           size="17"
+                           placeholder="Escreva o item"
+                        />
+                     </td>
+                     <td class="quantity">
+                        <input type="number" min="1" max="9999" />
+                     </td>
+                     <td>
+                        <input
+                           type="text"
+                           size="48"
+                           placeholder="Descriçao do item"
+                        />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <input
+                           type="text"
+                           size="17"
+                           placeholder="Escreva o item"
+                        />
+                     </td>
+                     <td class="quantity">
+                        <input type="number" min="1" max="9999" />
+                     </td>
+                     <td>
+                        <input
+                           type="text"
+                           size="48"
+                           placeholder="Descriçao do item"
+                        />
+                     </td>
+                  </tr>
+               </table>
+            </div>
+            <!-- Registro do procedimento -->
+            <div class="registroFinal">
+               <table width="100%" border="1">
+                  <tr>
+                     <td class="iten">Mecânico:</td>
+                     <td>
+                        <input
+                           type="text"
+                           placeholder="Escreva o nome do mecânico"
+                           size="26"
+                        />
+                     </td>
+                     <td class="iten">Responsável:</td>
+                     <td>
+                        <input
+                           type="text"
+                           placeholder="Escreva o nome do responsável"
+                           size="26"
+                           name=""
+                           id=""
+                        />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="iten">Assinatura:</td>
+                     <td></td>
+                     <td class="iten">Assinatura:</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td class="iten">chegada:</td>
+                     <td>
+                        <input type="date" name="" id="" /><input type="time" />
+                     </td>
+                     <td class="iten">saída:</td>
+                     <td>
+                        <input type="date" name="" id="" /><input type="time" />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="iten">Condiçoes finais:</td>
+                     <td colspan="3">
+                        <label for="ft">
+                           <input
+                              type="radio"
+                              id="ft"
+                              name="condicao"
+                           />Funcionando totalmente
+                        </label>
+                        <label for="fp">
+                           <input
+                              type="radio"
+                              id="fp"
+                              name="condicao"
+                           />Funcionando parcialmente
+                        </label>
+                        <label for="nf">
+                           <input type="radio" id="nf" name="condicao" />Não
+                           esta funcionando
+                        </label>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="iten">Observações:</td>
+                     <td colspan="3">
+                        <textarea
+                           name=""
+                           id=""
+                           cols="68"
+                           rows="4"
+                           placeholder="Descreva outras observações caso necessário"
+                        ></textarea>
+                     </td>
+                  </tr>
+               </table>
+            </div>
+            <!-- botoes -->
+            <div>
+               <button type="button" onmouseup="window.print()">
+                  Imprimir
+               </button>
+               <input type="submit" />
+            </div>
+         </form>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,10 @@
+@media print {
+    input::placeholder {
+        font-size: 0.001rem;
+    }
+
+    textarea::placeholder {
+        font-size: 0.001rem;
+    }
+ 
+}
